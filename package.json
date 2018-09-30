@@ -1,0 +1,39 @@
+{
+    "name": "portfoloio-re",
+    "version": "1.0.0",
+    "description": "Portfolio-RE",
+    "main": " ",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bessistemn1i/portfolio-re.git"
+    },
+    "author": "Eduard Zhulega",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bessistemn1i/portfolio-re/issues"
+    },
+    "homepage": "https://github.com/bessistemn1i/portfolio-re#readme",
+    "devDependencies": {
+        "babel": "^6.23.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.0.2",
+        "babel-preset-env": "^1.7.0",
+        "babel-register": "^6.26.0",
+        "browser-sync": "^2.24.7",
+        "gulp": "^3.9.1",
+        "gulp-notify": "^3.2.0",
+        "gulp-pug": "^4.0.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.1",
+        "sass-module-importer": "^1.4.0",
+        "uglifyjs-webpack-plugin": "^1.3.0",
+        "webpack-stream": "^5.1.1"
+    },
+    "dependencies": {
+        "jquery": "^3.3.1",
+        "normalize.css": "^8.0.0"
+    }
+}
