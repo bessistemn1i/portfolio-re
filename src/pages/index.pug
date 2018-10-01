@@ -16,7 +16,117 @@ html(lang="ru")
         include ../pug-modules/header.pug
 
         main.main
+            article.about#about
+                header.about__header
+                    h2.about__title Обо мне
+                
+                .about__description
+                    p Доброго времени суток! Меня зовут  <span>Эдуард</span>. Я начинающий веб-разработчик. На начальном этапа вплотную занимался версткой сайтов из макетов .psd (чуть болee двух лет). за это время я отлично освоил html & css, нарезку макетов в Photoshop, работу в Adobe Illustrator. <br>Целеустремленный, ответственный и исполнительный. Обладаю аналитическим складом ума, логическим мышлением. В процессе верстки продумываю каждую деталь и подготавливаю удобный, в нужных местах прокомментированный, код для программистов.
+                    a.about__resume(href="http://rgho.st/8RTnHssNT") Загрузить мое резюме
 
+            article.skills
+                header.skills__header
+                    h2.skills__title Мои навыки
+                .skills__content
+                    .skill
+                        .skill-bar
+                            h3.skill__title html
+                            #html
+                            h3.skill__title css
+                            #css
+                    .skill
+                        .skill-bar
+                            h3.skill__title javascript
+                            #javascript
+                            h3.skill__title jquery
+                            #jquery
+                    .skill
+                        .skill-bar
+                            h3.skill__title photoshop
+                            #photoshop
+                            h3.skill__title illustrator
+                            #illustrator
+
+            article.service
+                header.service__header
+                    h2.services__title Используемые техники
+                .service__content
+                    .service__item
+                        .service__image
+                            img(src="img/service/monitor.png", alt="html+css")
+                        h3.service__title html + css3
+                        p.service__description Современная верстка с использование препроцессоров Nunjucks, Pug2  + Sass<br>Адаптивная, кроссбраузерная верстка макета
+
+                    .service__item
+                        .service__image
+                            img(src="img/service/coding.png", alt="Система сборки")
+                        h3.service__title Система сборки
+                        p.service__description Сборка проекта на основе gulp, системы контроля версий git.
+
+                    .service__item
+                        .service__image
+                            img(src="img/service/binary.png", alt="Код")
+                        h3.service__title Код
+                        p.service__description Чистый, комментированный, валидный код с соблюдением стандартов W3C. Методология BEM Naming<br>Семантическая разметка кода.<br>Использование Pixel Perfect (точная верстка по макету)
+
+            article.projects
+                .projects__header
+                    h2.projects__title Мои проекты
+                .projects-content
+                    .project__item
+                        .project__item-image
+                            img(src="img/projects/project-1.png", alt="Тестовый проект - 1")
+                        .project__item-bg
+                        .project__item-hover-content
+                            a.project__item-hover-link(href="https://bessistemn1i.github.io/project-01.github.io/")
+                                i.project__item-hover-icon.icon-eye
+                    .project__item
+                        .project__item-image
+                            img(src="img/projects/project-2.png", alt="Тестовые проект - 2")
+                        .project__item-bg
+                        .project__item-hover-content
+                            a.project__item-hover-link(href="https://bessistemn1i.github.io/project-02-github.io/")
+                                i.project__item-hover-icon.icon-eye
+                    .project__item
+                        .project__item-image
+                            img(src="img/projects/project-3.png", alt="Тестовые проект - 3")
+                        .project__item-bg
+                        .project__item-hover-content
+                            a.project__item-hover-link(href="https://bessistemn1i.github.io/project-03-github.io/")
+                                i.project__item-hover-icon.icon-eye
+                    .project__item
+                        .project__item-image
+                            img(src="img/projects/project-4.png", alt="Тестовые проект - 4")
+                        .project__item-bg
+                        .project__item-hover-content
+                            a.project__item-hover-link(href="https://bessistemn1i.github.io/project-04-github.io/")
+                                i.project__item-hover-icon.icon-eye
+                    .project__item
+                        .project__item-image
+                            img(src="img/projects/project-5.png", alt="Тестовые проект - 5")
+                        .project__item-bg
+                        .project__item-hover-content
+                            a.project__item-hover-link(href="https://bessistemn1i.github.io/project-05-github.io/")
+                                i.project__item-hover-icon.icon-eye
+                    .project__item
+                        .project__item-image
+                            img(src="img/projects/project-6.png", alt="Тестовые проект - 6")
+                        .project__item-bg
+                        .project__item-hover-content
+                            a.project__item-hover-link(href="https://bessistemn1i.github.io/project-06-github.io/")
+                                i.project__item-hover-icon.icon-eye
+
+            .facts
+                .facts-bar
+                    p#experience
+                    p.facts__description года опыта в области верстки сайтов
+                .facts-bar
+                    p#projects
+                    p.facts__description дней на верстку макета
+                .facts-bar
+                    p#time
+                    p.facts__description ответственности за результат
+                    
         include ../pug-modules/footer.pug
 
         script(src="main.js")
