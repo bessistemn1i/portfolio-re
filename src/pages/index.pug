@@ -2,10 +2,21 @@
 html(lang="ru")
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-
-        title test
+        title(Портфолио: Жулега Эдуард)
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="shortcut icon" href="img/favicon.ico" type="image/x-con")
+        link(rel="preload" href="graphic_fonts/fontello/css/fontello.css" as="style" onload="this.rel='stylesheet'")
+        noscript
+            link(rel="stylesheet" href="graphic_fonts/fontello/css/fontello.css")
+        link(rel="preload" href="styles/main.css" as="style" onload="this.rel='stylesheet'")
+        noscript
+            link(rel="stylesheet" href="styles/main.css")
     body
-        h1 test
-        p some other text
+
+        include ../pug-modules/header.pug
+
+        main.main
+
+        include ../pug-modules/footer.pug
+
+        script(src="main.js")

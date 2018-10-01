@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat-Bold"), local("Montserrat-Bold"),
+    url("./fonts/montserrat/Montserrat-Bold.woff2") format("woff2"),
+    url("./fonts/montserrat/Montserrat-Bold.woff") format("woff");
+
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cormorant";
+    src: local("Cormorant-Medium"), local("Cormorant-Medium"),
+    url("./fonts/cormorant/Cormorant-Medium.woff2") format("woff2"),
+    url("./fonts/cormorant/Cormorant-Medium.woff") format("woff");
+    
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cormorant";
+    src: local("Cormorant-Light"), local("Bitter-Light"),
+    url("./fonts/cormorant/Cormorant-Light.woff2") format("woff2"),
+    url("./fonts/cormorant/Cormorant-Light.woff") format("woff");
+
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: local('fontello'), local('fontello'),
+    url('./fonts/fontello/fontello.woff2') format('woff2'),
+    url('./fonts/fontello/fontello.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+}
