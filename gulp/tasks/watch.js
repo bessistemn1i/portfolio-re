@@ -3,7 +3,7 @@ const browserSync = require("browser-sync").create();
 
 const dirs = {
     pug: "./src/**/*.pug",
-    sass: "./src/**/*.scss",
+    sass: "./src/sass/**/*.scss",
     js: "./src/js/**/*.js"
 }
 

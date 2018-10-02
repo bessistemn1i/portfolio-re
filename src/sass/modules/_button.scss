@@ -1,0 +1,23 @@
+.button {
+    // typography
+    color: #212121;
+    font-family: $baseFont;
+    text-transform: uppercase;
+    
+    // visual
+    background-color: #ffffff;
+    border: 1px solid #212121;
+    box-shadow: 0 14px 24px 0 rgba(0,0,0,0.2);
+    transition: all  0.3s ease-in-out;
+
+    &:focus,
+    &:hover {
+        // visual
+        background-color: #212121;
+        border: 1px solid transparent;
+        box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.15);
+
+        // typography
+        color: #ffffff;
+    }
+}

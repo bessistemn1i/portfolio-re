@@ -1,5 +1,11 @@
 @font-face {
   font-family: "Montserrat";
+  src: local("Montserrat-Regular"), local("Montserrat-Regular"), url("./fonts/montserrat/Montserrat-Regular.woff2") format("woff2"), url("./fonts/montserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
   src: local("Montserrat-Bold"), local("Montserrat-Bold"), url("./fonts/montserrat/Montserrat-Bold.woff2") format("woff2"), url("./fonts/montserrat/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
@@ -320,3 +326,23 @@ template {
  */
 [hidden] {
   display: none; }
+
+.button {
+  color: #212121;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #212121;
+  box-shadow: 0 14px 24px 0 rgba(0, 0, 0, 0.2);
+  transition: all  0.3s ease-in-out; }
+  .button:focus, .button:hover {
+    background-color: #212121;
+    border: 1px solid transparent;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.15);
+    color: #ffffff; }
+
+.main-nav__menu-link {
+  display: block;
+  font-family: "Cormorant";
+  color: #ffffff;
+  text-decoration: none; }

@@ -1,0 +1,24 @@
+.main-nav {
+
+}
+
+.main-nav__menu {
+
+}
+
+.main-nav__menu-item {
+
+}
+
+.main-nav__menu-link {
+
+    // box model
+    display: block;
+
+    // typography
+    font-family: $decoFont;
+    color: #ffffff;
+
+    // visual
+    text-decoration: none;
+}

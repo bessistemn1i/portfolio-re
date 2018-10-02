@@ -36,3 +36,19 @@ body {
     // box model
     box-sizing: border-box;
 }
+
+// Flued typograhy
+
+/* 18px @ 320px increasing to 32px @ 1920px */
+@media (min-width: 320px) {
+    :root {
+      font-size: calc(1.125rem + ((1vw - 3.2px) * 0.875));
+      /* Where: * 0.875 = 100 * font_Size_Difference / viewport_Width_Difference */
+    }
+  }
+  /* Prevent font scaling beyond this breakpoint */
+  @media (min-width: 1920px) {
+    :root {
+      font-size: 32px;
+    }
+  }

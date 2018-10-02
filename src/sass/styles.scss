@@ -1,6 +1,11 @@
 // fonts
  @import "fonts/fonts";
+ @import "base/vars";
  @import "fonts/icons";
-
-//normalize
+// normalize
 @import "normalize.css/normalize.css";
+
+// elements
+@import "modules/button";
+@import "modules/header";
+@import "modules/main-nav";
