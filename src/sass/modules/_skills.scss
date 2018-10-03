@@ -1,0 +1,44 @@
+.skills {
+    // box model
+    margin-top: 60px;
+    padding: 0 calc((100% - 1170px)/2);
+}
+
+.skills__header {
+    // positioning
+    position: relative;
+
+    // typography
+    text-align: center;
+
+    &:after {
+        content: '';
+
+        // positioning
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        // box model
+        display: block;
+        width: 60px;
+        height: 100%;
+
+        // visual
+        background-image: url('img/divider.png');
+        background-repeat: no-repeat;
+    }
+}
+
+.skills__title {
+    // box model
+    margin: 0;
+
+    // typography
+    font-family: $decoFont;
+    font-size: 2rem;
+    line-height: 1;
+    color: $baseColor;
+    text-transform: uppercase;
+}

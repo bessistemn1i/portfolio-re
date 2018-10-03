@@ -1,0 +1,72 @@
+.about {
+    // box model
+    padding-top: 30px;
+}
+
+.about__header {
+    // positioning
+    position: relative;
+
+    // typography
+    text-align: center;
+
+    &:after {
+        content: '';
+
+        // positioning
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        // box model
+        display: block;
+        width: 60px;
+        height: 100%;
+        
+        // visual
+        background-image: url('img/divider.png');
+        background-repeat: no-repeat;
+    }
+}
+
+.about__title {
+    // box model
+    margin: 0;
+
+    font-family: $decoFont;
+    font-size: 2rem;
+    line-height: 1;
+    color: $baseColor;
+    text-transform: uppercase;
+}
+
+.about__description {
+    // box model
+    max-width: 1000px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    // typography
+    text-align: center;
+}
+
+.about__description-text {
+    // typography
+    font-family: $baseFont;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: $baseColor;
+}
+
+.about__resume {
+    // box model
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    // visual
+    text-decoration: none;
+}

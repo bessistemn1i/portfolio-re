@@ -1,0 +1,16 @@
+.skill {
+
+}
+
+.skill__title {
+    // box model
+    display: inline-block;
+    margin: 0;
+    
+    // typography
+    font-size: 1.3rem;
+    text-align: left;
+    color: $baseFont;
+    text-transform: uppercase;
+    font-family: $decoFont;
+}
