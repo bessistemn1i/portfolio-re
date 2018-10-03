@@ -5,9 +5,9 @@ html(lang="ru")
         title(Портфолио: Жулега Эдуард)
         meta(name="viewport" content="width=device-width, initial-scale=1")
         link(rel="shortcut icon" href="img/favicon.ico" type="image/x-con")
-        link(rel="preload" href="graphic_fonts/fontello/css/fontello.css" as="style" onload="this.rel='stylesheet'")
+        link(rel="preload" href="fonts/fontello/css/fontello.css" as="style" onload="this.rel='stylesheet'")
         noscript
-            link(rel="stylesheet" href="graphic_fonts/fontello/css/fontello.css")
+            link(rel="stylesheet" href="fonts/fontello/css/fontello.css")
         link(rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'")
         noscript
             link(rel="stylesheet" href="styles.css")
@@ -21,31 +21,33 @@ html(lang="ru")
                     h2.about__title Обо мне
                 
                 .about__description
-                    p Доброго времени суток! Меня зовут  <span>Эдуард</span>. Я начинающий веб-разработчик. На начальном этапа вплотную занимался версткой сайтов из макетов .psd (чуть болee двух лет). за это время я отлично освоил html & css, нарезку макетов в Photoshop, работу в Adobe Illustrator. <br>Целеустремленный, ответственный и исполнительный. Обладаю аналитическим складом ума, логическим мышлением. В процессе верстки продумываю каждую деталь и подготавливаю удобный, в нужных местах прокомментированный, код для программистов.
-                    a.about__resume(href="http://rgho.st/8RTnHssNT") Загрузить мое резюме
+                    p.about__description-text Доброго времени суток! Меня зовут <span class="about__description-stress">Эдуард</span>. 
+                    p.about__description-text Я начинающий веб-разработчик. На начальном этапа вплотную занимался версткой сайтов из макетов .psd (чуть болee двух лет). за это время я отлично освоил html & css, нарезку макетов в Photoshop, работу в Adobe Illustrator.
+                    p.about__description-text Целеустремленный, ответственный и исполнительный. Обладаю аналитическим складом ума, логическим мышлением. 
+                    p.about__description-text В процессе верстки продумываю каждую деталь и подготавливаю удобный, в нужных местах прокомментированный, код для удобного его использования другими разработчиками.
+                    a.button.about__resume(href="http://rgho.st/8RTnHssNT") Загрузить мое резюме
 
             article.skills
                 header.skills__header
                     h2.skills__title Мои навыки
                 .skills__content
                     .skill
-                        .skill-bar
-                            h3.skill__title html
-                            #html
-                            h3.skill__title css
-                            #css
+                        h3.skill__title html
+                        #skill__html
+                        h3.skill__title css
+                        #skill__css
+
                     .skill
-                        .skill-bar
-                            h3.skill__title javascript
-                            #javascript
-                            h3.skill__title jquery
-                            #jquery
+                        h3.skill__title javascript
+                        #skill__javascript
+                        h3.skill__title jquery
+                        #skill__jquery
+
                     .skill
-                        .skill-bar
-                            h3.skill__title photoshop
-                            #photoshop
-                            h3.skill__title illustrator
-                            #illustrator
+                        h3.skill__title photoshop
+                        #skill__photoshop
+                        h3.skill__title illustrator
+                        #skill__illustrator
 
             article.service
                 header.service__header
@@ -55,66 +57,70 @@ html(lang="ru")
                         .service__image
                             img(src="img/service/monitor.png", alt="html+css")
                         h3.service__title html + css3
-                        p.service__description Современная верстка с использование препроцессоров Nunjucks, Pug2  + Sass<br>Адаптивная, кроссбраузерная верстка макета
+                        p.service__description Современная верстка на базе шаблонизатора Pug2, препроцессора SASS.
+                        p.service__description Адаптивная, кроссбраузерная верстка макета
 
                     .service__item
                         .service__image
                             img(src="img/service/coding.png", alt="Система сборки")
                         h3.service__title Система сборки
-                        p.service__description Сборка проекта на основе gulp, системы контроля версий git.
+                        p.service__description Сборка проекта на основе такс менеджера gulp, системы контроля версий git.
 
                     .service__item
                         .service__image
                             img(src="img/service/binary.png", alt="Код")
                         h3.service__title Код
-                        p.service__description Чистый, комментированный, валидный код с соблюдением стандартов W3C. Методология BEM Naming<br>Семантическая разметка кода.<br>Использование Pixel Perfect (точная верстка по макету)
+                        p.service__description Чистый, комментированный, валидный код с соблюдением стандартов W3C.
+                        p.service__description Методология BEM Naming
+                        p.service__description Семантическая разметка кода.
+                        p.service__description Использование Pixel Perfect (точная верстка по макету)
 
             article.projects
                 .projects__header
                     h2.projects__title Мои проекты
                 .projects-content
-                    .project__item
-                        .project__item-image
+                    .project
+                        .project__image
                             img(src="img/projects/project-1.png", alt="Тестовый проект - 1")
-                        .project__item-bg
-                        .project__item-hover-content
-                            a.project__item-hover-link(href="https://bessistemn1i.github.io/project-01.github.io/")
-                                i.project__item-hover-icon.icon-eye
-                    .project__item
-                        .project__item-image
+                        .project__bg
+                        .project__hover-content
+                            a.project__hover-link(href="https://bessistemn1i.github.io/project-01.github.io/")
+                                i.project__hover-icon.icon-eye
+                    .project
+                        .project__image
                             img(src="img/projects/project-2.png", alt="Тестовые проект - 2")
-                        .project__item-bg
-                        .project__item-hover-content
-                            a.project__item-hover-link(href="https://bessistemn1i.github.io/project-02-github.io/")
-                                i.project__item-hover-icon.icon-eye
-                    .project__item
-                        .project__item-image
+                        .project__bg
+                        .project__hover-content
+                            a.project__hover-link(href="https://bessistemn1i.github.io/project-02-github.io/")
+                                i.project__hover-icon.icon-eye
+                    .project
+                        .project__image
                             img(src="img/projects/project-3.png", alt="Тестовые проект - 3")
-                        .project__item-bg
-                        .project__item-hover-content
-                            a.project__item-hover-link(href="https://bessistemn1i.github.io/project-03-github.io/")
-                                i.project__item-hover-icon.icon-eye
-                    .project__item
-                        .project__item-image
+                        .project__bg
+                        .project__hover-content
+                            a.project__hover-link(href="https://bessistemn1i.github.io/project-03-github.io/")
+                                i.project__hover-icon.icon-eye
+                    .project
+                        .project__image
                             img(src="img/projects/project-4.png", alt="Тестовые проект - 4")
-                        .project__item-bg
-                        .project__item-hover-content
-                            a.project__item-hover-link(href="https://bessistemn1i.github.io/project-04-github.io/")
-                                i.project__item-hover-icon.icon-eye
-                    .project__item
-                        .project__item-image
+                        .project__bg
+                        .project__hover-content
+                            a.project__hover-link(href="https://bessistemn1i.github.io/project-04-github.io/")
+                                i.project__hover-icon.icon-eye
+                    .project
+                        .project__image
                             img(src="img/projects/project-5.png", alt="Тестовые проект - 5")
-                        .project__item-bg
-                        .project__item-hover-content
-                            a.project__item-hover-link(href="https://bessistemn1i.github.io/project-05-github.io/")
-                                i.project__item-hover-icon.icon-eye
-                    .project__item
-                        .project__item-image
+                        .project__bg
+                        .project__hover-content
+                            a.project__hover-link(href="https://bessistemn1i.github.io/project-05-github.io/")
+                                i.project__hover-icon.icon-eye
+                    .project
+                        .project__image
                             img(src="img/projects/project-6.png", alt="Тестовые проект - 6")
-                        .project__item-bg
-                        .project__item-hover-content
-                            a.project__item-hover-link(href="https://bessistemn1i.github.io/project-06-github.io/")
-                                i.project__item-hover-icon.icon-eye
+                        .project__bg
+                        .project__hover-content
+                            a.project__hover-link(href="https://bessistemn1i.github.io/project-06-github.io/")
+                                i.project__hover-icon.icon-eye
 
             .facts
                 .facts-bar

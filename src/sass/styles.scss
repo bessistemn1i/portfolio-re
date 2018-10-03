@@ -1,11 +1,22 @@
 // fonts
  @import "fonts/fonts";
- @import "base/vars";
  @import "fonts/icons";
+
 // normalize
 @import "normalize.css/normalize.css";
+
+//base
+@import "base/vars";
+@import "base/global";
+@import "base/mixins";
 
 // elements
 @import "modules/button";
 @import "modules/header";
 @import "modules/main-nav";
+@import "modules/about";
+@import "modules/service";
+@import "modules/skills";
+@import "modules/skill";
+@import "modules/projects";
+@import "modules/project";

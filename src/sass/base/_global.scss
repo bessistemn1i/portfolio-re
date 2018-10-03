@@ -22,12 +22,22 @@ body {
 
     // box model
     min-width: 320px;
+    width: 100%;
+    padding: 0 calc((100% - 1366px)/2);
     margin: 0;
-
+    
     // visual
     background-color: $mainColor;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.main {
+    // box model
+    width: 100%;
+
+    // visual
+    background-color: #ffffff;
 }
 
 *,
@@ -39,16 +49,16 @@ body {
 
 // Flued typograhy
 
-/* 18px @ 320px increasing to 32px @ 1920px */
+/* 16px @ 320px increasing to 18px @ 1024px */
 @media (min-width: 320px) {
     :root {
-      font-size: calc(1.125rem + ((1vw - 3.2px) * 0.875));
-      /* Where: * 0.875 = 100 * font_Size_Difference / viewport_Width_Difference */
+      font-size: calc(1rem + ((1vw - 3.2px) * 0.2841));
+      /* Where: * 0.2841 = 100 * font_Size_Difference / viewport_Width_Difference */
     }
   }
   /* Prevent font scaling beyond this breakpoint */
-  @media (min-width: 1920px) {
+  @media (min-width: 1024px) {
     :root {
-      font-size: 32px;
+      font-size: 18px;
     }
   }
