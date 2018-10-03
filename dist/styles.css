@@ -646,3 +646,46 @@ body {
   color: "Montserrat";
   text-transform: uppercase;
   font-family: "Cormorant"; }
+
+.projects {
+  margin-top: 60px; }
+
+.projects__header {
+  position: relative;
+  text-align: center; }
+  .projects__header:after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    width: 60px;
+    height: 100%;
+    background-image: url("img/divider.png");
+    background-repeat: no-repeat; }
+
+.projects__title {
+  margin: 0;
+  font-family: "Cormorant";
+  font-size: 2rem;
+  line-height: 1;
+  color: #212121;
+  text-transform: uppercase; }
+
+.projects__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60px; }
+
+.project {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px; }
+
+.project__image img {
+  display: block;
+  width: 100%; }

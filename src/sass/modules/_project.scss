@@ -1,9 +1,18 @@
 .project {
-
+    // box model
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
 }
 
 .project__image {
 
+    img {
+        // box model
+        display: block;
+        width: 100%;
+    }
 }
 
 .project__bg {

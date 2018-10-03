@@ -1,16 +1,52 @@
 .projects {
-
+    // box model
+    margin-top: 60px;
 }
 
 .projects__header {
+    // positioning
+    position: relative;
 
+    // typography
+    text-align: center;
+
+    &:after {
+        content: '';
+
+        // positioning
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        // box model
+        display: block;
+        width: 60px;
+        height: 100%;
+        
+        // visual
+        background-image: url('img/divider.png');
+        background-repeat: no-repeat;
+    }
 }
 
 .projects__title {
+    // box model
+    margin: 0;
 
+    font-family: $decoFont;
+    font-size: 2rem;
+    line-height: 1;
+    color: $baseColor;
+    text-transform: uppercase;
 }
 
 .projects__content {
-
+    // box model
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
 }
 
