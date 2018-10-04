@@ -5,9 +5,6 @@ html(lang="ru")
         title(Портфолио: Жулега Эдуард)
         meta(name="viewport" content="width=device-width, initial-scale=1")
         link(rel="shortcut icon" href="img/favicon.ico" type="image/x-con")
-        link(rel="preload" href="fonts/fontello/css/fontello.css" as="style" onload="this.rel='stylesheet'")
-        noscript
-            link(rel="stylesheet" href="fonts/fontello/css/fontello.css")
         link(rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'")
         noscript
             link(rel="stylesheet" href="styles.css")
@@ -124,13 +121,13 @@ html(lang="ru")
 
             .facts
                 .facts-bar
-                    p#experience
+                    p.facts__title#experience
                     p.facts__description года опыта в области верстки сайтов
                 .facts-bar
-                    p#projects
+                    p.facts__title#projects
                     p.facts__description дней на верстку макета
                 .facts-bar
-                    p#time
+                    p.facts__title#time
                     p.facts__description ответственности за результат
                     
         include ../pug-modules/footer.pug

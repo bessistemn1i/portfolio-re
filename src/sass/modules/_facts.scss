@@ -1,11 +1,27 @@
 .facts {
+    // box model
+    width: 100%;
+    padding: 0 calc((100% - 1170px)/2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
+    // visual
+    background-image: url('img/facts/facts-bg.png');
+    background-repeat: no-repeat;
 }
 
-.facts-bar {
-
+.facts__title {
+    // typography
+    font-family: $decoFont;
+    font-size: 1rem;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 .facts__description {
-    
+    // typography
+    font-family: $baseFont;
+    font-size: 1rem;
+    color: #ffffff;
 }
