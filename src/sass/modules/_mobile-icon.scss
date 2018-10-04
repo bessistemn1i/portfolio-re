@@ -1,0 +1,70 @@
+.mobile-icon {
+    // positioning
+    position: absolute;
+    right: 0;
+    top: 42px;
+    
+
+    // box model
+    height: 23px;
+    width: 30px;
+
+    // visual
+    cursor: pointer;
+    transform: rotate(0);
+    transition: all 0.3s ease-in-out;
+
+    &--active {
+        .mobile-icon-line--top {
+            // positioning
+            top: 5px;
+            transform: rotate(135deg);
+        }
+
+        .mobile-icon-line--middle {
+            // positioning
+            left: -60px;
+    
+            // visual
+            opacity: 0;
+        }
+
+        .mobile-icon-line--bottom {
+            // positioning
+            top: 5px;
+            transform: rotate(-135deg);
+        }
+    }
+}
+
+.mobile-icon-line {
+    // positioning
+    position: absolute;
+    left: 0;
+
+    // box model
+    display: block;
+    height: 3px;
+    width: 100%;
+
+    // visual
+    background-color: #212121;
+    opacity: 1;
+    transform: rotate(0);
+    transition: all 0.3s ease-in-out;
+
+    &--top {
+        // positioning
+        top: 0;
+    }
+
+    &--middle {
+        // positioning
+        top: 7px;
+    }
+
+    &--bottom {
+        // positioning
+        top: 14px;
+    }
+}

@@ -448,7 +448,7 @@ body {
   background-color: #ffffff; }
   @media (min-width: 2540px) {
     .header {
-      max-height: 1200px; } }
+      max-height: 700px; } }
 
 .header__top {
   display: flex;
@@ -511,6 +511,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0;
+  padding: 0;
   list-style: none; }
 
 .main-nav__menu-item {
@@ -535,7 +536,7 @@ body {
   width: 30px;
   cursor: pointer;
   transform: rotate(0);
-  transition: transform 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out; }
 
 .main-nav__mobile-icon-line {
   position: absolute;
@@ -546,7 +547,7 @@ body {
   background-color: #212121;
   opacity: 1;
   transform: rotate(0);
-  transition: transform 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out; }
 
 .main-nav__mobile-icon-line--top {
   top: 0; }
@@ -556,6 +557,18 @@ body {
 
 .main-nav__mobile-icon-line--bottom {
   top: 14px; }
+
+.main-nav__mobile-icon--active .main-nav__mobile-icon-line--top {
+  top: 5px;
+  transform: rotate(135deg); }
+
+.main-nav__mobile-icon--active .main-nav__mobile-icon-line--middle {
+  left: -60px;
+  opacity: 0; }
+
+.main-nav__mobile-icon--active .main-nav__mobile-icon-line--bottom {
+  top: 5px;
+  transform: rotate(-135deg); }
 
 .about {
   padding-top: 30px; }
@@ -826,3 +839,39 @@ body {
   .footer__contacts-icon:hover, .footer__contacts-icon:active {
     color: #212121;
     background-color: #ffffff; }
+
+.mobile-icon {
+  position: absolute;
+  right: 0;
+  top: 42px;
+  height: 23px;
+  width: 30px;
+  cursor: pointer;
+  transform: rotate(0);
+  transition: all 0.3s ease-in-out; }
+  .mobile-icon--active .mobile-icon-line--top {
+    top: 5px;
+    transform: rotate(135deg); }
+  .mobile-icon--active .mobile-icon-line--middle {
+    left: -60px;
+    opacity: 0; }
+  .mobile-icon--active .mobile-icon-line--bottom {
+    top: 5px;
+    transform: rotate(-135deg); }
+
+.mobile-icon-line {
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #212121;
+  opacity: 1;
+  transform: rotate(0);
+  transition: all 0.3s ease-in-out; }
+  .mobile-icon-line--top {
+    top: 0; }
+  .mobile-icon-line--middle {
+    top: 7px; }
+  .mobile-icon-line--bottom {
+    top: 14px; }
