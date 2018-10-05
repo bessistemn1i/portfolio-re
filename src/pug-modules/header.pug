@@ -1,22 +1,23 @@
 header.header
     .header__top#home
         nav.main-nav
-            ul.main-nav__menu
-                li.main-nav__menu-item
-                    a.main-nav__menu-link(href="#home") главная
-                li.main-nav__menu-item
-                    a.main-nav__menu-link(href="#about") обо мне
-                li.main-nav__menu-item
-                    a.main-nav__menu-link(href="#service") техники
-                li.main-nav__menu-item
-                    a.main-nav__menu-link(href="#portfolio") портфолио
-                li.main-nav__menu-item
-                    a.main-nav__menu-link(href="#contacts") контакты
-
-            .mobile-icon#show-menu
-                span.mobile-icon-line.mobile-icon-line--top
-                span.mobile-icon-line.mobile-icon-line--middle
-                span.mobile-icon-line.mobile-icon-line--bottom
+            ul.menu
+                li.menu__item
+                    a.menu__link(href="#home") главная
+                li.menu__item
+                    a.menu__link(href="#about") обо мне
+                li.menu__item
+                    a.menu__link(href="#service") техники
+                li.menu__item
+                    a.menu__link(href="#portfolio") портфолио
+                li.menu__item
+                    a.menu__link(href="#contacts") контакты
+            
+            .main-nav__mobile-icon
+                .mobile-icon
+                    span.mobile-icon-line.mobile-icon-line--top
+                    span.mobile-icon-line.mobile-icon-line--middle
+                    span.mobile-icon-line.mobile-icon-line--bottom
         
     .header__bottom
         h1.header__bottom-title Эдуард Жулега

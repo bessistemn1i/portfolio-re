@@ -1,10 +1,4 @@
 .mobile-icon {
-    // positioning
-    position: absolute;
-    right: 0;
-    top: 42px;
-    
-
     // box model
     height: 23px;
     width: 30px;
@@ -34,6 +28,11 @@
             top: 5px;
             transform: rotate(-135deg);
         }
+    }
+
+    @include atDesktopM {
+        // box model
+        display: none;
     }
 }
 
