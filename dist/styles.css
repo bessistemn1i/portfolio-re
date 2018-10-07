@@ -522,7 +522,7 @@ body {
 
 .main-nav__mobile-icon {
   position: fixed;
-  top: 30px;
+  top: 35px;
   right: 25px;
   z-index: 100; }
 
@@ -785,7 +785,8 @@ body {
   color: #ffffff;
   background-color: transparent;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 .footer__contacts-icon {
   padding: 9.8px 8px;
@@ -834,16 +835,16 @@ body {
 
 .menu {
   position: fixed;
-  top: 0;
   right: -100%;
   z-index: 99;
   height: 100vh;
   width: 100%;
   max-width: 400px;
   padding: 25px;
+  padding-top: 48px;
   text-align: right;
   list-style: none;
-  transition: right 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out; }
   @media (min-width: 1200px) {
     .menu {
       position: relative;
@@ -857,6 +858,7 @@ body {
       padding: 17px 0;
       margin: 0;
       max-width: 100%;
+      padding-top: auto;
       background-color: transparent;
       opacity: 1;
       visibility: visible; } }
@@ -869,9 +871,10 @@ body {
     height: 100vh;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 48px;
     opacity: 1;
-    transition: right 0.3s ease-in-out;
-    visibility: visible; }
+    visibility: visible;
+    background-color: #cccccc; }
     @media (min-width: 1200px) {
       .menu--active {
         position: relative;

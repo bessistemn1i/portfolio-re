@@ -1,7 +1,6 @@
 .menu {
     // positioning
     position: fixed;
-    top: 0;
     right: -100%;
     z-index: 99;
 
@@ -10,13 +9,14 @@
     width: 100%;
     max-width: 400px;
     padding: 25px;
+    padding-top: 48px;
 
     // typography
     text-align: right;
 
     // visual
     list-style: none;
-    transition: right 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     @include atDesktopM {
         // positioning
@@ -33,6 +33,7 @@
         padding: 17px 0;
         margin: 0;
         max-width: 100%;
+        padding-top: auto;
 
         // visual
         background-color: transparent;
@@ -52,11 +53,12 @@
         height: 100vh;
         margin-right: auto;
         margin-left: auto;
+        padding-top: 48px;
 
         // visual
         opacity: 1;
-        transition: right 0.3s ease-in-out;
         visibility: visible;
+        background-color: #cccccc;
 
         @include atDesktopM {
             // positioning

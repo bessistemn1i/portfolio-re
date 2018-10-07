@@ -18,7 +18,7 @@ class ButtonUp {
         }
         
         btnUp.addEventListener('click', () => {
-           scrollToTop;
+           scrollToTop(300);
         });
 
         btnHire.addEventListener('click', () => {
