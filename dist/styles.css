@@ -577,14 +577,38 @@ body {
   background-image: url("img/service/top-service-bg.png");
   background-repeat: no-repeat; }
 
-.service__header {
+.service__wrap {
+  width: 100%;
+  max-width: 1230px;
+  padding: 30px;
+  margin-top: 240px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 40px 8px rgba(0, 0, 0, 0.15); }
+
+.services__title {
+  margin: 0;
+  color: #212121;
+  font-family: "Cormorant";
+  font-size: 2rem;
+  line-height: 1;
+  text-transform: uppercase; }
+
+.service__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px; }
+
+.service__content-header {
   position: relative;
   text-align: center; }
-  .service__header:after {
+  .service__content-header:after {
     content: '';
     position: absolute;
-    bottom: -50px;
     left: 50%;
+    bottom: -50px;
     transform: translate(-50%, 0);
     display: block;
     width: 60px;
@@ -592,50 +616,29 @@ body {
     background-image: url("img/divider.png");
     background-repeat: no-repeat; }
 
-.services__title {
-  margin: 0;
-  font-family: "Cormorant";
-  font-size: 2rem;
-  line-height: 1;
-  color: #212121;
-  text-transform: uppercase; }
-
-.service__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1230px;
-  padding: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 240px;
-  background-color: #ffffff;
-  box-shadow: 0 0 40px 8px rgba(0, 0, 0, 0.15); }
-
 .service__item {
   display: inline-block;
-  max-width: 300px;
-  width: 100%; }
+  width: 100%;
+  max-width: 300px; }
 
 .service__image img {
   display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-left: auto; }
 
 .service__title {
+  color: #212121;
   font-family: "Cormorant";
   font-size: 1.3rem;
-  color: #212121;
-  text-align: center;
-  line-height: 1;
   font-weight: 700;
+  line-height: 1;
+  text-align: center;
   text-transform: uppercase; }
 
 .service__description {
+  color: #212121;
   font-family: "Montserrat";
   font-size: 1rem;
-  color: #212121;
   line-height: 1.4; }
 
 .skills {

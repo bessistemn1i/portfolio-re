@@ -7,7 +7,42 @@
     background-repeat: no-repeat;
 }
 
-.service__header {
+.service__wrap {
+    // box model
+    width: 100%;
+    max-width: 1230px;
+    padding: 30px;
+    margin-top: 240px;
+    margin-right: auto;
+    margin-left: auto;
+
+    // visual
+    background-color: #ffffff;
+    box-shadow: 0 0 40px 8px rgba(0,0,0,0.15);
+}
+
+.services__title {
+    // box model
+    margin: 0;
+
+    // typography
+    color: $baseColor;
+    font-family: $decoFont;
+    font-size: 2rem;
+    line-height: 1;
+    text-transform: uppercase;
+
+}
+
+.service__content {
+    // box model
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.service__content-header {
     // positioning
     position: relative;
 
@@ -19,8 +54,8 @@
 
         // positioning
         position: absolute;
-        bottom: -50px;
         left: 50%;
+        bottom: -50px;
         transform: translate(-50%, 0);
 
         // box model
@@ -34,41 +69,11 @@
     }
 }
 
-.services__title {
-    // box model
-    margin: 0;
-
-    // typography
-    font-family: $decoFont;
-    font-size: 2rem;
-    line-height: 1;
-    color: $baseColor;
-    text-transform: uppercase;
-
-}
-
-.service__content {
-    // box model
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1230px;
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 240px;
-
-    // visual
-    background-color: #ffffff;
-    box-shadow: 0 0 40px 8px rgba(0,0,0,0.15);
-}
-
 .service__item {
     // box model
     display: inline-block;
-    max-width: 300px;
     width: 100%;
+    max-width: 300px;
 }
 
 .service__image {
@@ -76,27 +81,27 @@
     img {
         // box model
         display: block;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
     }
 }
 
 .service__title {
     // typography
+    color: $baseColor;
     font-family: $decoFont;
     font-size: 1.3rem;
-    color: $baseColor;
-    text-align: center;
-    line-height: 1;
     font-weight: 700;
+    line-height: 1;
+    text-align: center;
     text-transform: uppercase;
 }
 
 .service__description {
     // typography
+    color: $baseColor;
     font-family: $baseFont;
     font-size: 1rem;
-    color: $baseColor;
     line-height: 1.4;
 }
 
