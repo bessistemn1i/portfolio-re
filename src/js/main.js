@@ -1,6 +1,15 @@
 import MobileMenu from "./modules/MobileMenu";
-import ButtonUp from "./modules/ButtonUp";
+import ScrollTo from "./modules/ScrollTo";
 
 
 new MobileMenu();
-new ButtonUp();
+
+new ScrollTo({
+    button: '.header__bottom-hire',
+    container: '.footer'
+});
+
+new ScrollTo({
+    button: '.footer__up',
+    container: '#home'
+});
