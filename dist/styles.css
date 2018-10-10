@@ -510,7 +510,8 @@ body {
   background-color: #ffffff;
   box-shadow: 0 14px 24px 0 rgba(0, 0, 0, 0.2);
   border: 1px solid #212121;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; }
   .header__bottom-hire:hover {
     color: #ffffff;
     background-color: #212121;
