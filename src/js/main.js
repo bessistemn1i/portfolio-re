@@ -18,9 +18,35 @@ new ScrollTo({
 new ViewportCheck({
     elem: '.skills',
     callback: function() {
-        const testing7 = new Testing7({
+        const html = new ProgressBar({
             el: '#skill__html',
-            finish: 40
+            finish: 100,
+            background: '#272526'
+        });
+        const css = new ProgressBar({
+            el: '#skill__css',
+            finish: 100,
+            background: '#272526'
+        });
+        const js = new ProgressBar({
+            el: '#skill__javascript',
+            finish: 80,
+            background: '#FEB031'
+        });
+        const jq = new ProgressBar({
+            el: '#skill__jquery',
+            finish: 90,
+            background: '#156AAB'
+        });
+        const photoshop = new ProgressBar({
+            el: '#skill__photoshop',
+            finish: 85,
+            background: '#157EBA'
+        });
+        const illustrator = new ProgressBar({
+            el: '#skill__illustrator',
+            finish: 70,
+            background: '#FE7827'
         });
     }
 })

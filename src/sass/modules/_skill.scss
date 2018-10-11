@@ -1,16 +1,30 @@
 .skill {
-
+    // box model
+    max-width: 350px;
+    width: 100%;
+    margin: 45px 0;
 }
 
 .skill__title {
     // box model
     display: inline-block;
     margin: 0;
-    
+    margin-bottom: 5px;
+
     // typography
     font-size: 1.3rem;
     text-align: left;
     color: $baseFont;
     text-transform: uppercase;
     font-family: $decoFont;
+}
+
+.skill__content {
+    // box model
+    display: inline-block;
+    width: 100%;
+}
+
+.skill__item {
+    margin-top: 30px;
 }

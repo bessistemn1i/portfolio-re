@@ -42,3 +42,10 @@
     color: $baseColor;
     text-transform: uppercase;
 }
+
+.skills__content {
+    // box model
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
