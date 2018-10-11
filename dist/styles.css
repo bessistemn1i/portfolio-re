@@ -789,19 +789,38 @@ body {
   padding: 9.5px 8px;
   font-size: 1rem;
   border: 1px solid #ffffff;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out; }
+  .footer__social-icon--vk:hover {
+    color: #FEFDFF;
+    background-color: #5983B7;
+    border: 1px solid #5983B7; }
+  .footer__social-icon--gp:hover {
+    color: #FEFBFF;
+    background-color: #D9453F;
+    border: 1px solid #D9453F; }
+  .footer__social-icon--fb:hover {
+    color: #FFFFFF;
+    background-color: #3E5A96;
+    border: 1px solid #3E5A96; }
 
 .footer__contacts-tel {
   display: block;
   font-family: "Montserrat";
   color: #ffffff;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; }
+  .footer__contacts-tel:hover {
+    color: #D9453F; }
+    .footer__contacts-tel:hover .footer__contacts-tel-stress {
+      color: #ffffff; }
 
 .footer__contacts-tel-stress {
   font-family: "Cormorant";
   font-weight: 700;
   text-transform: uppercase;
-  color: #b33000; }
+  color: #b33000;
+  transition: color 0.3s ease-in-out; }
 
 .footer__up {
   color: #ffffff;

@@ -2,6 +2,7 @@ import MobileMenu from "./modules/MobileMenu";
 import ScrollTo from "./modules/ScrollTo";
 import ViewportCheck from "./modules/ViewportCheck";
 import ProgressBar from "./modules/ProgressBar";
+import Count from "./modules/Counter";
 
 new MobileMenu();
 
@@ -15,10 +16,10 @@ new ScrollTo({
     container: '#home'
 });
 
-new ViewportCheck({
+const viewPort = new ViewportCheck({
     elem: '.skills',
     callback: function() {
-        const html = new ProgressBar({
+        /* const html = new ProgressBar({
             el: '#skill__html',
             finish: 100,
             background: '#272526'
@@ -47,6 +48,26 @@ new ViewportCheck({
             el: '#skill__illustrator',
             finish: 70,
             background: '#FE7827'
-        });
+        }); */
+        console.log('test1');
     }
-})
+});
+
+const count = new ViewportCheck({
+    elem:'.facts',
+    callback: function() {
+        /* const exp = new Count({
+            el: '#experience',
+            finish: 3
+        });
+        const prjects = new Count({
+            el: '#projects',
+            finish: 10
+        });
+        const time = new Count({
+            el: '#time',
+            finish: 5
+        }); */
+        console.log('test2');
+    }
+});

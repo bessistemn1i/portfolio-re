@@ -48,6 +48,40 @@
     // visual
     border: 1px solid #ffffff;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+
+    &--vk{
+        &:hover {
+            // typography
+                color: #FEFDFF;
+            
+                // visual
+            background-color: #5983B7;
+            border: 1px solid #5983B7;
+        }
+    }
+
+    &--gp {
+        &:hover {
+            // typography
+            color: #FEFBFF;
+            
+            // visual
+            background-color: #D9453F;
+            border: 1px solid #D9453F;
+        }
+    }
+
+    &--fb {
+        &:hover {
+            // typography
+            color: #FFFFFF;
+            
+            // visual
+            background-color: #3E5A96;
+            border: 1px solid #3E5A96;
+        }
+    }
 }
 
 .footer__contacts-tel {
@@ -58,6 +92,17 @@
     font-family: $baseFont;
     color: #ffffff;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        // typography
+        color: #D9453F;
+
+        .footer__contacts-tel-stress {
+            // typography
+            color: #ffffff;
+        }
+    }
 }
 
 .footer__contacts-tel-stress {
@@ -66,6 +111,9 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #b33000;
+
+    // visual
+    transition: color 0.3s ease-in-out;
 }
 
 .footer__up {
