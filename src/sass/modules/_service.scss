@@ -5,6 +5,7 @@
     // visual
     background-image: url('img/service/top-service-bg.png');
     background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .service__wrap {
@@ -37,9 +38,14 @@
 .service__content {
     // box model
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 60px;
+
+    @include atDesktopS {
+        // box model
+        flex-direction: row;
+    }
 }
 
 .service__content-header {
@@ -55,7 +61,7 @@
         // positioning
         position: absolute;
         left: 50%;
-        bottom: -50px;
+        bottom: -70px;
         transform: translate(-50%, 0);
 
         // box model
@@ -66,17 +72,52 @@
         // visual
         background-image: url('img/divider.png');
         background-repeat: no-repeat;
+
+        @include atTablet {
+            // positioning
+            bottom: -50px;
+        }
     }
 }
 
 .service__item {
     // box model
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    max-width: 300px;
+    margin: 15px 0;
+
+    @include atTablet {
+        // box model
+        flex-direction: row;
+    }
+
+    @include atDesktopS {
+        // box model
+        max-width: 300px;
+        margin: 0;
+        flex-direction: column;
+    }
 }
 
-.service__image {
+.service__item-content {
+    // box model
+    margin-top: 30px;
+    
+    @include atTablet {
+        // box model
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    @include atDesktopS {
+        // box model
+        margin-left: auto;
+        margin-top: 30px;
+    }
+}
+
+.service__item-image {
 
     img {
         // box model
@@ -86,7 +127,10 @@
     }
 }
 
-.service__title {
+.service__item-title {
+    // box model
+    margin-top: 0;
+
     // typography
     color: $baseColor;
     font-family: $decoFont;
@@ -95,9 +139,22 @@
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
+
+    @include atTablet {
+        // typography
+        text-align: left;
+    }
+
+    @include atDesktopS {
+        // box model
+        margin-top: auto;
+
+        // typography
+        text-align: center;
+    }
 }
 
-.service__description {
+.service__item-description {
     // typography
     color: $baseColor;
     font-family: $baseFont;

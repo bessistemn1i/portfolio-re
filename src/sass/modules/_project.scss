@@ -1,9 +1,21 @@
 .project {
+    // positioning
+    position: relative;
+    z-index: 1;
+
     // box model
     display: inline-block;
     width: 100%;
     max-width: 400px;
     margin: 10px;
+
+    &:hover {
+        .project__hover-content {
+            // visual
+            visibility: visible;
+            top: -60px;
+        }
+    }
 }
 
 .project__image {
@@ -15,12 +27,39 @@
     }
 }
 
-.project__bg {
-
-}
-
 .project__hover-content {
+    // positioning
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 
+    // box model
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    // typography
+    font-family: $decoFont;
+    font-size: 2rem;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+
+    // visual
+    background-color: rgb(63, 221, 241);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:active {
+        // visual
+        background: rgba(0, 0, 0, 0.8);
+        color: rgb(63, 221, 241);
+    }
 }
 
 .project__hover-link {

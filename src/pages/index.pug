@@ -2,7 +2,7 @@
 html(lang="ru")
     head
         meta(charset="UTF-8")
-        title(Портфолио: Жулега Эдуард)
+        title Портфолио: Жулега Эдуард
         meta(name="viewport" content="width=device-width, initial-scale=1")
         link(rel="shortcut icon" href="img/favicon.ico" type="image/x-con")
         link(rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'")
@@ -24,7 +24,7 @@ html(lang="ru")
                     p.about__description-text В процессе верстки продумываю каждую деталь и подготавливаю удобный, в нужных местах прокомментированный, код для удобного его использования другими разработчиками.
                     a.button.about__resume(href="http://rgho.st/8RTnHssNT") Загрузить мое резюме
 
-            article.skills
+            article.skills#skills
                 header.skills__header
                     h2.skills__title Мои навыки
                 .skills__content
@@ -58,7 +58,7 @@ html(lang="ru")
                                 h3.skill__title illustrator
                                 #skill__illustrator.progressbar
 
-            article.service
+            article.service#service
                 .service__wrap
                     
                     .service__content-header
@@ -66,83 +66,73 @@ html(lang="ru")
                             h2.services__title Используемые техники
                     .service__content
                         .service__item
-                            .service__image
+                            .service__item-image
                                 img(src="img/service/monitor.png", alt="html+css")
-                            h3.service__title html + css3
-                            p.service__description Современная верстка на базе шаблонизатора Pug2, препроцессора SASS.
-                            p.service__description Адаптивная, кроссбраузерная верстка макета
+                            .service__item-content
+                                h3.service__item-title html + css3
+                                p.service__item-description Современная верстка на базе шаблонизатора Pug2, препроцессора SASS.
+                                p.service__item-description Адаптивная, кроссбраузерная верстка макета
 
                         .service__item
-                            .service__image
+                            .service__item-image
                                 img(src="img/service/coding.png", alt="Система сборки")
-                            h3.service__title Система сборки
-                            p.service__description Сборка проекта на основе такс менеджера gulp, системы контроля версий git.
+                            .service__item-content
+                                h3.service__item-title Система сборки
+                                p.service__item-description Сборка проекта на основе такс менеджера gulp, системы контроля версий git.
 
                         .service__item
-                            .service__image
+                            .service__item-image
                                 img(src="img/service/binary.png", alt="Код")
-                            h3.service__title Код
-                            p.service__description Чистый, комментированный, валидный код с соблюдением стандартов W3C.
-                            p.service__description Методология BEM Naming
-                            p.service__description Семантическая разметка кода.
-                            p.service__description Использование Pixel Perfect (точная верстка по макету)
+                            .service__item-content
+                                h3.service__item-title Код
+                                p.service__item-description Чистый, комментированный, валидный код с соблюдением стандартов W3C.
+                                p.service__item-description Методология BEM Naming
+                                p.service__item-description Семантическая разметка кода.
+                                p.service__item-description Использование Pixel Perfect (точная верстка по макету)
 
-            article.projects
+            article.projects#examples
                 .projects__header
                     h2.projects__title Мои проекты
                 .projects__content
                     .project
                         .project__image
                             img(src="img/projects/project-1.png", alt="Тестовый проект - 1")
-                        .project__bg
-                        .project__hover-content
-                            a.project__hover-link(href="https://bessistemn1i.github.io/project-01.github.io/")
-                                i.project__hover-icon.icon-eye
+                        a.project__hover-content(href="https://bessistemn1i.github.io/project-01.github.io/") Подробнее
+                                
                     .project
                         .project__image
                             img(src="img/projects/project-2.png", alt="Тестовые проект - 2")
-                        .project__bg
-                        .project__hover-content
-                            a.project__hover-link(href="https://bessistemn1i.github.io/project-02-github.io/")
-                                i.project__hover-icon.icon-eye
+                        a.project__hover-content(href="https://bessistemn1i.github.io/project-02-github.io/") Подробнее
+                                
                     .project
                         .project__image
                             img(src="img/projects/project-3.png", alt="Тестовые проект - 3")
-                        .project__bg
-                        .project__hover-content
-                            a.project__hover-link(href="https://bessistemn1i.github.io/project-03-github.io/")
-                                i.project__hover-icon.icon-eye
+                        a.project__hover-content(href="https://bessistemn1i.github.io/project-03-github.io/") Подробнее
+                                
                     .project
                         .project__image
                             img(src="img/projects/project-4.png", alt="Тестовые проект - 4")
-                        .project__bg
-                        .project__hover-content
-                            a.project__hover-link(href="https://bessistemn1i.github.io/project-04-github.io/")
-                                i.project__hover-icon.icon-eye
+                        a.project__hover-content(href="https://bessistemn1i.github.io/project-04-github.io/") Подробнее
+                                
                     .project
                         .project__image
                             img(src="img/projects/project-5.png", alt="Тестовые проект - 5")
-                        .project__bg
-                        .project__hover-content
-                            a.project__hover-link(href="https://bessistemn1i.github.io/project-05-github.io/")
-                                i.project__hover-icon.icon-eye
+                        a.project__hover-content(href="https://bessistemn1i.github.io/project-05-github.io/") Подробнее
                     .project
                         .project__image
                             img(src="img/projects/project-6.png", alt="Тестовые проект - 6")
-                        .project__bg
-                        .project__hover-content
-                            a.project__hover-link(href="https://bessistemn1i.github.io/project-06-github.io/")
-                                i.project__hover-icon.icon-eye
+                        a.project__hover-content(href="https://bessistemn1i.github.io/project-06-github.io/") Подробнее
+                                
 
-            .facts
-                .facts-bar
+            .facts#facts
+                .facts__bar
                     p.facts__title#experience
-                    p.facts__description года опыта в области верстки сайтов
-                .facts-bar
-                    p.facts__title#projects
-                    p.facts__description дней на верстку макета
-                .facts-bar
-                    p.facts__title#time
+                    p.facts__description года опыта верстки сайтов
+                .facts__bar
+                    p.facts__title#facts__time
+                    p.facts__description дней на верстку макета формата .psd
+                .facts__bar
+                    p.facts__title#facts__responsibility
                     p.facts__description ответственности за результат
                     
         include ../pug-modules/footer.pug

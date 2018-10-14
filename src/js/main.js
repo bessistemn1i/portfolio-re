@@ -4,6 +4,7 @@ import ViewportCheck from "./modules/ViewportCheck";
 import ProgressBar from "./modules/ProgressBar";
 import Count from "./modules/Counter";
 import elementCheck from "./modules/ElementCheck";
+import SpyScroll from "./modules/SpyScroll";
 
 new MobileMenu();
 
@@ -17,8 +18,7 @@ new ScrollTo({
     container: '#home'
 });
 
-
-const vewPort = new ViewportCheck({
+new ViewportCheck({
     el: ['.skills', '.facts'],
     callback: function() {
         new elementCheck({
@@ -65,14 +65,16 @@ const vewPort = new ViewportCheck({
                     finish: 3
                 });
                 const prjects = new Count({
-                    el: '#projects',
-                    finish: 10
+                    el: '#facts__time',
+                    finish: 7
                 });
-                const time = new Count({
-                    el: '#time',
-                    finish: 5
+                const responsibility = new Count({
+                    el: '#facts__responsibility',
+                    finish: 100
                 });
             }
         });
     }
 });
+
+new SpyScroll();

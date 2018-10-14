@@ -3,23 +3,71 @@
     width: 100%;
     padding: 0 calc((100% - 1170px)/2);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-
+    margin-top: 60px;
+    padding: 40px 0;
+    
     // visual
     background-image: url('img/facts/facts-bg.png');
+    background-size: cover;
     background-repeat: no-repeat;
+
+    @include atTablet {
+        // box model
+        flex-direction: row;
+    }
+}
+
+.facts__bar {
+    // typography
+    text-align: center;
 }
 
 .facts__title {
+    // box model
+    margin: 0;
+
     // typography
-    font-family: $decoFont;
-    font-size: 1rem;
+    font-family: $baseFont;
+    font-size: 4rem;
     color: #ffffff;
+    text-align: center;
     text-transform: uppercase;
 }
 
+#facts__time {
+    &:before {
+        content: 'До';
+
+        // box model
+        margin-right: 5px;
+
+        // typography
+        font-family: $baseFont;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+#facts__responsibility {
+    &:after {
+        content: '%';
+
+        // box model
+        margin-left: 5px;
+
+        // typography
+        font-family: $baseFont;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
 .facts__description {
+    // box model
+    margin-top: 0;
+
     // typography
     font-family: $baseFont;
     font-size: 1rem;

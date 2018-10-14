@@ -8,14 +8,18 @@
     padding: 0 calc((100% - 1170px)/2);
 
     // visual
-    background: -moz-linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(250,250,250,0.89) 44%, rgba(255,255,255,0.89) 52%, rgba(255,255,255,0.87) 100%); /* ff3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.87)), color-stop(48%, rgba(255,255,255,0.89)), color-stop(56%, rgba(250,250,250,0.89)), color-stop(100%, rgba(204,204,204,1))); /* safari4+,chrome */
-background: -webkit-linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(250,250,250,0.89) 44%, rgba(255,255,255,0.89) 52%, rgba(255,255,255,0.87) 100%); /* safari5.1+,chrome10+ */
-background: -o-linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(250,250,250,0.89) 44%, rgba(255,255,255,0.89) 52%, rgba(255,255,255,0.87) 100%); /* opera 11.10+ */
-background: -ms-linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(250,250,250,0.89) 44%, rgba(255,255,255,0.89) 52%, rgba(255,255,255,0.87) 100%); /* ie10+ */
-background: linear-gradient(0deg, rgba(204,204,204,1) 0%, rgba(250,250,250,0.89) 44%, rgba(255,255,255,0.89) 52%, rgba(255,255,255,0.87) 100%); /* w3c */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* ie6-9 */
+    background-image:
+        linear-gradient(0deg, rgba(204,204,204,1) 0%, rgba(250,250,250,0.89) 44%, rgba(255,255,255,0.89) 52%, rgba(255,255,255,0.87) 100%);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
 
+    @include atTablet {
+        background-image:
+        url('img/header/header-bg2.png'),
+        linear-gradient(0deg, rgba(204,204,204,1) 0%, rgba(250,250,250,0.89) 44%, rgba(255,255,255,0.89) 52%, rgba(255,255,255,0.87) 100%);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    }
     @include atUltraHD {
         // box model
         max-height: 700px;
@@ -26,7 +30,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     // box model
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 100%;
 
 }
@@ -36,14 +40,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     position: absolute;
     top: 50%;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 30px;
+    transform: translate(0%, -50%);
     z-index: 1;
 
     // box model
     display: block;
     width: 100%;
-    padding: 0 calc((100% - 1170px)/2);
+
+    @include atDesktopM {
+        // positioning
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        // box model
+        padding: 0 calc((100% - 1170px)/2);
+    }
 }
 
 .header__bottom-title {

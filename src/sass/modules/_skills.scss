@@ -46,6 +46,15 @@
 .skills__content {
     // box model
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    @include atDesktopM {
+        // box model
+        flex-direction: row;
+        align-items: flex-start;
+    }
 }

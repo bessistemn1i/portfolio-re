@@ -16,7 +16,7 @@ class Counter {
                 self.start++;
                 self.el.innerHTML = self.start;
             }
-        },1000);
+        },150);
     }
 }
 

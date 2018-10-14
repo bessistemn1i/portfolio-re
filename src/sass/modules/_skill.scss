@@ -1,8 +1,13 @@
 .skill {
     // box model
-    max-width: 350px;
     width: 100%;
-    margin: 45px 0;
+    margin: 15px 0;
+
+    @include atDesktopM {
+        // box model
+        max-width: 350px;
+        margin: 45px 0;
+    }
 }
 
 .skill__title {
