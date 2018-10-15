@@ -9,11 +9,6 @@ import SpyScroll from "./modules/SpyScroll";
 new MobileMenu();
 
 new ScrollTo({
-    button: '.header__bottom-hire',
-    container: '.footer'
-});
-
-new ScrollTo({
     button: '.footer__up',
     container: '#home'
 });
